@@ -1,0 +1,8 @@
+设计一个类：
+    1. 数据一般都放在private、protected中。
+    2. 传值最好采用by reference，关于是否为const看需要。
+    3. 返回值最好也采用by reference。
+    4. 类内的函数要加const的尽量加，否则有些情况会报错，如：传入一个const对象，但是在该函数中被修改。
+    5. initialization list初始化。
+
+注意：同一个类生成的对象是友元。所以在类内可以直接访问同一个类的另一个对象的私有变量或函数。
